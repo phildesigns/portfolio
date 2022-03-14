@@ -1,28 +1,30 @@
 <template>
   <div>
-  <footer>
-    <div class="footer-section">
-      <h3>Plan du site</h3>
-      <ul>
-        <li><a>Accueil <b>></b></a></li>
-        <li><a>Projets <b>></b></a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Informations</h3>
-      <ul>
-        <li><a>Contact <b>></b></a></li>
-        <li><a>Mentions légales <b>></b></a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Plus</h3>
-      <ul class="socials">
-        <li><a href="https://github.com/miowski"><i class="fi-snsuxl-github-alt"></i></a></li>
-        <li><a href="https://linkedin.com/in/philemonvarret"><i class="fi-snsuxl-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </footer>
+    <footer>
+      <div class="footer-section">
+        <h3>Plan du site</h3>
+        <ul>
+          <li><a>Accueil <b>></b></a></li>
+          <li><a>Projets <b>></b></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Informations</h3>
+        <ul>
+          <li><a>Contact <b>></b></a></li>
+          <li><a>Mentions légales <b>></b></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Plus</h3>
+        <ul class="socials">
+          <li><a href="https://github.com/phildesigns"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+          <li><a href="https://linkedin.com/in/philemonvarret"><i class="fa fa-github-square"
+                                                                  aria-hidden="true"></i></a></li>
+          <li><a href="https://instagram.com/philsht"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -40,6 +42,19 @@ footer {
 
 .footer-section {
   border-top: solid 3px var(--contrast);
+}
+
+.socials li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.socials li:last-child {
+  margin-right: 0;
+}
+
+.socials i {
+  font-size: 2rem;
 }
 
 footer {
