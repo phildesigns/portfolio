@@ -2,7 +2,9 @@
   <div>
     <header>
       <nav>
-        <h1>Phil V.</h1>
+        <router-link to="/">
+          <h1>Phil V.</h1>
+        </router-link>
         <div class="nav-toggle" @click="openMenu()">
           <div class="nav-toggle-bar">
           </div>
@@ -114,5 +116,24 @@ nav {
 .menu-open .nav-toggle-bar::after {
   transform: rotate(90deg);
   top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    transform: translateX(0);
+    height: auto;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+  .menu-content li {
+    display: inline;
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
 }
 </style>
