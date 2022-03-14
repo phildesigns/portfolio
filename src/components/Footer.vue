@@ -37,7 +37,7 @@ export default {
 
 <style>
 footer {
-  margin-bottom: 2em;
+  margin: 5em auto;
 }
 
 .footer-section {
