@@ -117,6 +117,9 @@ b {
 
 button {
   font-weight: 600;
+  padding: 1em 2em;
+  background: var(--tonic);
+  border-radius: 5px;
 }
 
 .info small {

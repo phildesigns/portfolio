@@ -24,6 +24,8 @@
         </div>
       </div>
     </div>
+    "
+    <a id="cta" v-bind:href="project.acf.link">Open project <b>></b></a>
   </div>
 </template>
 
@@ -109,6 +111,17 @@ nav {
   margin: auto;
 }
 
+#cta {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding: 1em 2em;
+  background: var(--tonic);
+  border-radius: 5px;
+  color: var(--dominant);
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   .intro-content h1 {
     font-size: 9rem;
@@ -143,6 +156,10 @@ nav {
 
   .section:nth-child(even) div:last-child .section-title h2 {
     text-align: right;
+  }
+
+  .section-title:nth-child(odd) {
+    order: -1;
   }
 
   .section img {

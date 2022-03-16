@@ -4,7 +4,7 @@
       <div class="footer-section">
         <h3>Site map</h3>
         <ul>
-          <li><router-link to="/" tag="a">Accueil <b>></b></router-link></li>
+          <li><router-link to="/" tag="a">Home <b>></b></router-link></li>
         </ul>
       </div>
       <div class="footer-section">
