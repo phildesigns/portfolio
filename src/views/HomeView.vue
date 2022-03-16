@@ -22,32 +22,18 @@
       <span><i class="fa fa-sticky-note" aria-hidden="true"></i></span>
     </div>
     <div class="projects">
-      <div class="project"
-           :style="{
-           backgroundImage : 'url(' + require('@/assets/img/netlab/thumbnail.jpg') + '), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))'
-      }">
+      <div class="project" v-for="project in projects" :key="project.id"
+           :style="{ backgroundImage : 'url(' + project.acf.thumbnail.url + ')'}">
         <div class="description">
-          <h3>Netlab</h3>
-          <p>2020 - Site web</p>
+          <a :href="'#/project/' + project.id">
+            <h3>{{ project.acf.title }}</h3>
+          </a>
+          <p>{{ project.acf.year }} - {{ project.acf.type }}</p>
         </div>
         <ul class="tags">
-          <li><span>HTML CSS</span></li>
-          <li><span>JS</span></li>
-        </ul>
-      </div>
-      <div class="project"
-           :style="{
-           backgroundImage : 'url(' + require('@/assets/img/thom-yorke/thumbnail.jpg') + '), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))'
-      }">
-        <div class="description">
-          <h3>Thom Yorke</h3>
-          <p>2021 - Site web</p>
-        </div>
-        <ul class="tags">
-          <li><span>HTML CSS</span></li>
-          <li><span>JS</span></li>
-          <li><span>VueJS</span></li>
-          <li><span>Responsive</span></li>
+          <li v-for="tag in project.acf.tags" :key="tag.title">
+            <span>{{ tag.title }}</span>
+          </li>
         </ul>
       </div>
     </div>
@@ -90,8 +76,26 @@
 <script>
 // @ is an alias to /src
 
+import axios from "axios";
+import param from "@/param/param";
+
 export default {
-  name: 'HomeView'
+  name: 'HomeView',
+
+  data() {
+    return {
+      projects: []
+    }
+  },
+
+  created() {
+    axios.get(param.host + 'project')
+        .then(response => {
+          console.log('Response : ', response);
+          this.projects = response.data;
+        })
+        .catch(error => console.log(error))
+  },
 }
 </script>
 
@@ -130,10 +134,6 @@ export default {
   box-shadow: 0 4px 19px rgba(0, 0, 0, 0.7);
   border-radius: 0.5rem;
   background-size: cover;
-}
-
-.project:active {
-  transition: ease-in-out .10s;
 }
 
 .project .description, .project .tags {

@@ -2,17 +2,9 @@
   <div>
     <footer>
       <div class="footer-section">
-        <h3>Plan du site</h3>
+        <h3>Site map</h3>
         <ul>
-          <li><a>Accueil <b>></b></a></li>
-          <li><a>Projets <b>></b></a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Informations</h3>
-        <ul>
-          <li><a>Contact <b>></b></a></li>
-          <li><a>Mentions légales <b>></b></a></li>
+          <li><router-link to="/" tag="a">Accueil <b>></b></router-link></li>
         </ul>
       </div>
       <div class="footer-section">

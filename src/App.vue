@@ -10,10 +10,14 @@
 
 <script>
 import Header from '@/components/Header.vue'
-import Footer from "@/components/Footer";
+import Footer from '@/components/Footer'
+import param from '@/param/param'
+
+const axios = require('axios');
 
 export default {
   name: 'HomeView',
+
   components: {
     Header,
     Footer
