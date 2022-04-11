@@ -218,7 +218,7 @@ export default {
   .projects, .infos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
+    grid-gap: 2em 1em;
     max-width: 940px;
     margin: auto auto 2em;
   }
