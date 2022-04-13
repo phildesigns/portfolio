@@ -24,7 +24,6 @@
         </div>
       </div>
     </div>
-    "
     <a id="cta" v-bind:href="project.acf.link">Open project <b>></b></a>
   </div>
 </template>

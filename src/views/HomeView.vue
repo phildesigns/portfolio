@@ -26,7 +26,7 @@
            :style="{ backgroundImage : 'url(' + project.acf.thumbnail.url + ')'}">
         <div class="description">
           <a :href="'#/project/' + project.id">
-            <h3>{{ project.acf.title }}</h3>
+            <h3>{{ project.acf.title }} ></h3>
           </a>
           <p>{{ project.acf.year }} - {{ project.acf.type }}</p>
         </div>
@@ -147,6 +147,7 @@ export default {
 
 .description h3, .description p {
   margin: 0 0.5em 0.25em 0;
+  filter: drop-shadow(0 0 10px black)
 }
 
 .tags {

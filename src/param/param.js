@@ -1,3 +1,3 @@
 export default {
-    host: 'https://phil-json.000webhostapp.com/wp-json/wp/v2/'
+    host: 'https://wordpress.pvarret.fr/wp-json/wp/v2/'
 }
