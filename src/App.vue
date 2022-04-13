@@ -30,6 +30,7 @@ export default {
   --dominant: #202020;
   --contrast: #F2F2F2;
   --tonic: #56FFA4;
+  --globalwidth: 1280px;
 }
 
 html {
@@ -52,7 +53,6 @@ h1, h2, h3 {
 
 h2 {
   font-size: 3rem;
-  text-align: center;
 }
 
 .title {
@@ -67,7 +67,7 @@ h2 {
 
 .title-1 {
   justify-content: space-between;
-  max-width: 940px;
+  max-width: var(--globalwidth);
 }
 
 .title-1 span {

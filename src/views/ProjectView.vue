@@ -127,12 +127,8 @@ nav {
   }
 
   .sections {
-    max-width: 940px;
+    max-width: var(--globalwidth);
     margin: auto;
-  }
-
-  .section-title h2 {
-    text-align: left;
   }
 
   .section-illustration {

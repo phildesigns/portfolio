@@ -17,10 +17,16 @@
         <img id="intro-avatar" src="@/assets/img/avatar.png" alt="Avatar with a fresh fade, a hoodie and a laptop">
       </div>
     </div>
+    <div class="intro-text">
+      <h2 style="color: var(--tonic); text-align: left;">Hey!</h2>
+      <p>I'm Phil, a designer and developer based in Montbéliard city, east of France. I create websites models, visual identities,
+      icons and much more !</p>
+    </div>
     <div class="title title-1">
       <h2>Projects</h2>
       <span><i class="fa fa-sticky-note" aria-hidden="true"></i></span>
     </div>
+
     <div class="projects">
       <div class="project" v-for="project in projects" :key="project.id"
            :style="{ backgroundImage : 'url(' + project.acf.thumbnail.url + ')'}">
@@ -126,6 +132,22 @@ export default {
   height: 17em;
 }
 
+.intro-text {
+  max-width: var(--globalwidth);
+  margin: auto;
+  display: block;
+}
+
+.intro-text h2 {
+  font-size: 6rem;
+  margin: 0.35em 0;
+}
+
+.intro-text p{
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
 .project {
   position: relative;
   height: 12em;
@@ -222,7 +244,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em 1em;
-    max-width: 940px;
+    max-width: var(--globalwidth);
     margin: auto auto 2em;
   }
 
