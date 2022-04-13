@@ -8,6 +8,11 @@
         </ul>
       </div>
       <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Interested in <b>working with me</b> ?</p>
+        <p><a class="cta" href="mailto:regard-haubans0z@icloud.com">Get in touch</a> by email :)</p>
+      </div>
+      <div class="footer-section">
         <h3>Plus</h3>
         <ul class="socials">
           <li><a href="https://github.com/phildesigns"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
@@ -59,6 +64,13 @@ footer h3 {
 
 footer a {
   font-size: 1rem;
+}
+
+a.cta {
+  font-weight: 600;
+  color: var(--tonic);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 @media only screen and (min-width: 768px) {
