@@ -136,18 +136,20 @@ export default {
   background-size: cover;
 }
 
-.project .description, .project .tags {
+.project .tags {
   display: flex;
   align-items: center;
 }
 
-.description {
-  width: fit-content;
-}
-
 .description h3, .description p {
   margin: 0 0.5em 0.25em 0;
-  filter: drop-shadow(0 0 10px black)
+  filter: drop-shadow(0 0 10px black);
+  text-align: left;
+}
+
+.description h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .tags {
@@ -231,6 +233,10 @@ export default {
   .project:hover {
     transform: translateY(0.1em);
     box-shadow: none;
+  }
+
+  .description {
+    display: flex;
   }
 }
 </style>
