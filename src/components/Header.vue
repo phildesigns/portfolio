@@ -37,7 +37,7 @@ nav {
 }
 
 #monogram {
-  overflow: clip;
+  overflow: inherit;
   height: 5em;
   margin: auto 1em;
 }
