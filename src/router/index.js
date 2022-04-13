@@ -6,7 +6,10 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: "Phil's Portfolio"
+    }
   },
   { path: '/project/:id(\\d+)',
     name: 'project',
