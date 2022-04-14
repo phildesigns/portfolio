@@ -37,8 +37,8 @@
           <p>{{ project.acf.year }} - {{ project.acf.type }}</p>
         </div>
         <ul class="tags">
-          <li v-for="tag in project.acf.tags" :key="tag.title">
-            <span>{{ tag.title }}</span>
+          <li v-for="tag in project.acf.tags" :key="tag.id">
+            <span>{{ tag.post_title }}</span>
           </li>
         </ul>
       </div>
@@ -179,7 +179,7 @@ export default {
 }
 
 .tags span {
-  border-radius: 1em;
+  border-radius: 0.5em;
   background: var(--tonic);
   color: var(--dominant);
   margin-right: 0.5em;
