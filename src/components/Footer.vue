@@ -4,7 +4,9 @@
       <div class="footer-section">
         <h3>Site map</h3>
         <ul>
-          <li><router-link to="/" tag="a">Home <b>></b></router-link></li>
+          <li>
+            <router-link to="/" tag="a">Home <b>></b></router-link>
+          </li>
         </ul>
       </div>
       <div class="footer-section">
@@ -15,9 +17,9 @@
       <div class="footer-section">
         <h3>Plus</h3>
         <ul class="socials">
-          <li><a href="https://github.com/phildesigns"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          <li><a href="https://linkedin.com/in/philemonvarret"><i class="fa fa-github-square"
-                                                                  aria-hidden="true"></i></a></li>
+          <li><a href="https://linkedin.com/in/philemonvarret"><i class="fa fa-linkedin-square" aria-hidden="true">
+          </i></a></li>
+          <li><a href="https://github.com/phildesigns"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
           <li><a href="https://instagram.com/philsht"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>

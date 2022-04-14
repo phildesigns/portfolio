@@ -24,7 +24,10 @@
         </div>
       </div>
     </div>
-    <a id="cta" v-bind:href="project.acf.link">Open project <b>></b></a>
+    <a id="cta" v-bind:href="project.acf.primary_link.url">{{ project.acf.primary_link.title }} <b>></b></a>
+    <div class="secondarylinks">
+      <a v-for="slink in project.acf.secondary_links" :key="slink.title" v-bind:href="slink.url">{{ slink.title }} <b>></b></a>
+    </div>
   </div>
 </template>
 
@@ -119,6 +122,23 @@ nav {
   border-radius: 5px;
   color: var(--dominant);
   text-decoration: none;
+}
+
+.secondarylinks {
+  max-width: var(--globalwidth);
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+}
+
+.secondarylinks a {
+  margin: 0.65em;
+  opacity: 0.5;
+  transition: .3s;
+}
+
+.secondarylinks a:hover {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
