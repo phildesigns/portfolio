@@ -59,6 +59,9 @@
           <li>DUT Métiers du Multimédia et d'Internet
             <br/><small>2020 - 2022</small>
           </li>
+          <li>Licence de Littérature Anglaise (LLCER)
+            <br/><small>Depuis 2022</small>
+          </li>
         </ul>
       </div>
       <div class="info">

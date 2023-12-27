@@ -20,7 +20,7 @@
           <li><a href="https://linkedin.com/in/philemonvarret"><i class="fa fa-linkedin-square" aria-hidden="true">
           </i></a></li>
           <li><a href="https://github.com/phildesigns"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-          <li><a href="https://instagram.com/philsht"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://instagram.com/irvingvrt"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>
     </footer>
